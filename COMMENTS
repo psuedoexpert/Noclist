@@ -1,0 +1,47 @@
+# Instructions
+
+Below are complete instructions on how to build and run the Noclist JavaScript application.
+
+## Requirements
+
+* Tested and run with Node.js version 14.0+
+* Docker running the noclist container (per assignment instructions)
+
+## Installation
+
+1. Install and run Docker
+2. Clone the repository
+3. Change directory into the cloned repository
+4. Run `npm install` to install dependencies
+
+## Usage
+
+The BADSEC server will run on port 8888. You can start it with:
+
+`docker run --rm -p 8888:8888 adhocteam/noclist`
+
+You should see `Listening on http://0.0.0.0:8888`.
+
+Once the **BADSEC** server is running, you can run the Noclist application in another Terminal window with this command from within the project directory:
+
+`node index.js`
+
+You should see results printed to stdout or errors printed to stderr.
+
+If you have any trouble getting the server running, or any other questions, please feel free to open an issue on this repository.
+
+## Output
+
+Outputs a JSON-formatted list of user ids to stdout:
+
+```json
+["9757263792576857988", "7789651288773276582", "16283886502782682407", "...etc"]
+```
+
+## Testing
+
+In a Terminal window within the project directory, run this command:
+
+`npm test`
+
+You should see test results printed in the output.
